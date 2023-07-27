@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+        <script src="http://host:port/assets/modules/channel-web/inject.js"></script>
         <title>Bem vindo</title>
 
         <!--Google Fonts-->
@@ -76,4 +76,12 @@
     </script>
     <script src="./js/responsiveslides.min.js"></script>
     <script src="./js/slide.js"></script>
+    <script>
+      window.botpressWebChat.init({
+        host: 'http://localhost:3000',
+        botId: 'testebot'
+        },
+        extraStylesheet: 'http://localhost:3000/assets/modules/channel-web/assets/infa-style.css'
+      })
+</script>
 </html>
